@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>雪の日記</title>
+    <link rel="shortcut icon" href="./images_3/seal.jpg">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./vendors/hamburgers.css">
+    <link rel="stylesheet" href="./vendors/animate.min.css">
+    <link rel="stylesheet" href="./vendors/strip.css">
+     <style type="text/css">
+        .snow-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 100001;
+        }
+        .on,.on1,.on2{
+            cursor: pointer;
+        }
+        .ok{
+            color:#ec6179;
+        }        
+
+        
+
+        
+    </style> 
+</head>
+<body>
+     <div class="snow-container"></div> 
+<div class="wrap"> 
+ <header>
+    <div class="container">
+        <!-- <div class="background"></div> -->
+        <span class="logo">
+            <a href="index.html"><img src="./imges/logo3.png"></a>
+        </span>
+        <div class="navList">
+            <a class="navItem" href="./about_timeline.html">雪の故事</a>
+            <a class="navItem" href="./season.html">雪の季節</a>
+            <a class="navItem" href="./menu.html">雪の滋味</a>
+            <a class="navItem focus" href="#">雪の日記</a>
+            <a class="navItem" href="./contact_ipad.html">雪の訊息</a>
+        </div>
+        <div class="ham">
+            <button onclick="animat()" class="hamburger hamburger--elastic" type="button">
+                <span class="hamburger-box ">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+
+
+    </div>
+    </div>
+ </header>
+
+
+ <div class="parallax">
+    <div class="parallax_inner wow rubberBand">
+        <h1>雪の日記</h1>
+    </div>
+ </div>
+
+   <div class="feature">
+     <div class="container wow fadeInUp solwer">
+       <h2>打卡記錄並且分享我的雪冰日記，即可免費獲得一張優惠券</h2>
+       <a href="#">＋分享日記</a>
+     </div>
+
+   </div>
+
+ <div class="content_blog">
+     <div class="content_blog_head wow fadeInUp solwer">
+         <ul class="heading">
+             <li class="on ">瀏覽最多</li>
+             <li class="on1 ">收藏最多</li>
+             <li class="on2 ok">最新分享</li>
+         </ul>
+          
+
+        <div class="search">
+          <img src="./images_3/searchicon.png" alt="">   
+         <input type="text" placeholder="搜尋日記" class="searchbar" >
+        </div>
+         <!-- <input type="button" class="searchbtn"> -->
+
+     </div>
+
+
+    <div class="content_blog_body">
+        
+    <div class="flex_column_item1 wow fadeInUp ">
+      
+        <a href="./imges/blog_a2.jpg" class="strip" data-strip-group="mygroup1"></a>
+        <a href="./imges/blog_a1.jpg" class="strip" data-strip-group="mygroup1"></a>
+        <div class="blog_pic ">
+            <!-- <a href="./imges/blog_a2.jpg" class="strip" data-strip-group="mygroup1"></a>
+            <a href="./imges/blog_a1.jpg" class="strip" data-strip-group="mygroup1"></a> -->
+            <a href="./imges/blogimg9.jpg" class="strip" data-strip-group="mygroup1" ><img src="./imges/blogimg9.jpg" width="100%" ></a>
+        </div>
+        
+        <div class="blog_txt ">
+            <h3>藍莓起司雪冰太棒了！</h3>
+            <p>看起來有點像是珍珠奶茶口味的這款韓國雪冰，其實也是人氣很高的藍莓起司口味。藍莓鋪滿了整碗冰，上頭點綴了許多香濃的起司塊，不管是冰品配著藍莓吃，或是連同起司一起感受這濃郁的香氣，都很適合。這款算是小編的私心熱愛，尤其是看了這藍莓舖滿了一個碗公，就感覺十分滿足。</p>
+        </div>
+        
+        <div class="tag ">
+            <a href="#">#雪冰</a>
+            <a href="#">＃Taiwan</a>
+            <a href="#">#Snowice</a>
+        
+        </div>
+        
+        <div class="note ">
+            <img src="./images_3/Jeff.jpg" alt="" width="25px" height="25px" style="border-radius: 50%">
+            <a href="#">Jeff</a>
+            <img src="./images_3/eye.png" alt="" width="20px" height="20px">
+            <p>300</p>
+            <img src="./images_3/blogging.png" alt="" width="20px" height="20px">
+            <p>300</p>
+        
+        </div>
+     
+
+     
+        <a href="./images_3/menu_banner.jpg" class="strip" data-strip-group="mygroup2"></a>
+        <a href="./imges/blog_b1.jpg" class="strip" data-strip-group="mygroup2"></a>
+        <div class="blog_pic  ">
+            <!-- <a href="./images_3/menu_banner.jpg" class="strip" data-strip-group="mygroup2"></a>
+            <a href="./imges/blog_b1.jpg" class="strip" data-strip-group="mygroup2"></a> -->
+            <a href="./imges_2/blogimg_b.jpg" class="strip" data-strip-group="mygroup2"><img src="./imges_2/blogimg_b.jpg" width="100%"></a>
+        </div>
+        
+        <div class="blog_txt  ">
+            <h3>藍莓起司雪冰太棒了！</h3>
+            <p>看起來有點像是珍珠奶茶口味的這款韓國雪冰，其實也是人氣很高的藍莓起司口味。藍莓鋪滿了整碗冰，上頭點綴了許多香濃的起司塊，不管是冰品配著藍莓吃，或是連同起司一起感受這濃郁的香氣，都很適合。這款算是小編的私心熱愛，尤其是看了這藍莓舖滿了一個碗公，就感覺十分滿足。</p>
+        </div>
+        
+        <div class="tag">
+            <a href="#">#雪冰</a>
+            <a href="#">＃Taiwan</a>
+            <a href="#">#Snowice</a>
+        
+        </div>
+        
+        <div class="note">
+            <img src="./images_3/Jeff.jpg" alt="" width="25px" height="25px" style="border-radius: 50%">
+            <a href="#">Jeff</a>
+            <img src="./images_3/eye.png" alt="" width="20px" height="20px">
+            <p>300</p>
+            <img src="./images_3/blogging.png" alt="" width="20px" height="20px">
+            <p>300</p>
+        
+        </div>
+  
+
+    </div>
+    <div class="flex_column_item2 wow fadeInUp ">
+        <a href="./imges/blogimg4.jpg" class="strip" data-strip-group="mygroup3" data-strip-options="side: 'bottom'"></a>
+        <a href="./imges/blog_c1.jpg" class="strip" data-strip-group="mygroup3" data-strip-options="side: 'bottom'"></a>
+        <div class="blog_pic wow ">
+            <!-- <a href="./imges/homepage_img6.jpg" class="strip" data-strip-group="mygroup3" data-strip-options="side: 'top'"></a>
+            <a href="./imges/blog_c1.jpg" class="strip" data-strip-group="mygroup3" data-strip-options="side: 'top'"></a> -->
+            <a href="./imges/blog_img/blog_aa.jpg" class="strip" data-strip-group="mygroup3" data-strip-options="side: 'bottom'"><img src="./imges/blog_img/blog_aa_2.jpg" width="100%"></a>
+        </div>
+        
+        <div class="blog_txt ">
+            <h3>藍莓起司雪冰太棒了！</h3>
+            <p>看起來有點像是珍珠奶茶口味的這款韓國雪冰，其實也是人氣很高的藍莓起司口味。藍莓鋪滿了整碗冰，上頭點綴了許多香濃的起司塊，不管是冰品配著藍莓吃，或是連同起司一起感受這濃郁的香氣，都很適合。這款算是小編的私心熱愛，尤其是看了這藍莓舖滿了一個碗公，就感覺十分滿足。</p>
+
+        </div>
+        
+        <div class="tag">
+            <a href="#">#雪冰</a>
+            <a href="#">＃Taiwan</a>
+            <a href="#">#Snowice</a>
+        
+        </div>
+        
+        <div class="note">
+            <img src="./images_3/Jeff.jpg" alt="" width="25px" height="25px" style="border-radius: 50%">
+            <a href="#">Jeff</a>
+            <img src="./images_3/eye.png" alt="" width="20px" height="20px">
+            <p>300</p>
+            <img src="./images_3/blogging.png" alt="" width="20px" height="20px">
+            <p>300</p>
+        
+        </div>
+    
+        <a href="./imges/index_ig8.jpg" class="strip" data-strip-group="mygroup4" data-strip-options="side: 'top'"></a>
+        <a href="./imges/blog_d1.jpg" class="strip" data-strip-group="mygroup4" data-strip-options="side: 'top'"></a>
+        <div class="blog_pic">
+            <!-- <a href="./imges/index_ig8.jpg" class="strip" data-strip-group="mygroup4" data-strip-options="side: 'top'"></a>
+            <a href="./imges/blog_d1.jpg" class="strip" data-strip-group="mygroup4" data-strip-options="side: 'top'"></a> -->
+            <a href="./imges/blog_img/blog_ff.jpg" class="strip" data-strip-group="mygroup4" data-strip-options="side: 'top'"><img src="./imges/blog_img/blog_ff_2.jpg" width="100%"></a>
+        </div>
+        
+        <div class="blog_txt">
+            <h3>藍莓起司雪冰太棒了！</h3>
+            <p>看起來有點像是珍珠奶茶口味的這款韓國雪冰，其實也是人氣很高的藍莓起司口味。藍莓鋪滿了整碗冰，上頭點綴了許多香濃的起司塊，不管是冰品配著藍莓吃，或是連同起司一起感受這濃郁的香氣，都很適合。這款算是小編的私心熱愛，尤其是看了這藍莓舖滿了一個碗公，就感覺十分滿足。</p>
+                                     
+        </div>
+        
+        <div class="tag">
+            <a href="#">#雪冰</a>
+            <a href="#">＃Taiwan</a>
+            <a href="#">#Snowice</a>
+        
+        </div>
+        
+        <div class="note">
+            <img src="./images_3/Jeff.jpg" alt="" width="25px" height="25px" style="border-radius: 50%">
+            <a href="#">Jeff</a>
+            <img src="./images_3/eye.png" alt="" width="20px" height="20px">
+            <p>300</p>
+            <img src="./images_3/blogging.png" alt="" width="20px" height="20px">
+            <p>300</p>
+        
+        </div>
+    </div>
+    <div class="flex_column_item3 wow fadeInUp ">
+        <a href="./imges/blogimg8.jpg" class="strip" data-strip-group="mygroup5" data-strip-options="side: 'bottom'"></a>
+        <a href="./imges/blog_e2.jpg" class="strip" data-strip-group="mygroup5" data-strip-options="side: 'bottom'"></a>
+        <div class="blog_pic">
+           
+            <a href="./imges/blog_img/blog_ee_2.jpg" class="strip" data-strip-group="mygroup5" data-strip-options="side: 'bottom'"><img src="./imges/blog_img/blog_ee.jpg" width="100%"></a>
+        </div>
+        
+        <div class="blog_txt">
+            <h3>藍莓起司雪冰太棒了！</h3>
+            <p>看起來有點像是珍珠奶茶口味的這款韓國雪冰，其實也是人氣很高的藍莓起司口味。藍莓鋪滿了整碗冰，上頭點綴了許多香濃的起司塊，不管是冰品配著藍莓吃，或是連同起司一起感受這濃郁的香氣，都很適合。這款算是小編的私心熱愛，尤其是看了這藍莓舖滿了一個碗公，就感覺十分滿足。</p>
+        </div>
+        
+        <div class="tag">
+            <a href="#">#雪冰</a>
+            <a href="#">＃Taiwan</a>
+            <a href="#">#Snowice</a>
+        
+        </div>
+        
+        <div class="note">
+            <img src="./images_3/Jeff.jpg" alt="" width="25px" height="25px" style="border-radius: 50%">
+            <a href="#">Jeff</a>
+            <img src="./images_3/eye.png" alt="" width="20px" height="20px">
+            <p>300</p>
+            <img src="./images_3/blogging.png" alt="" width="20px" height="20px">
+            <p>300</p>
+        
+        </div>
+    
+          <a href="./imges/blog_img/blog_bb.jpg" class="strip" data-strip-group="mygroup6" data-strip-options="side: 'top'"></a>
+          <a href="./imges/blog_img/blog_cc.jpg" class="strip" data-strip-group="mygroup6" data-strip-options="side: 'top'"></a>
+        <div class="blog_pic">
+            <a href="./imges/blog_img/blog_dd.jpg" class="strip" data-strip-group="mygroup6" data-strip-options="side: 'top'"><img src="./imges/blog_img/blog_dd.jpg" width="100%"></a>
+        </div>
+        
+        <div class="blog_txt">
+            <h3>藍莓起司雪冰太棒了！</h3>
+            <p>看起來有點像是珍珠奶茶口味的這款韓國雪冰，其實也是人氣很高的藍莓起司口味。藍莓鋪滿了整碗冰，上頭點綴了許多香濃的起司塊，不管是冰品配著藍莓吃，或是連同起司一起感受這濃郁的香氣，都很適合。這款算是小編的私心熱愛，尤其是看了這藍莓舖滿了一個碗公，就感覺十分滿足。</p>
+        </div>
+        
+        <div class="tag">
+            <a href="#">#雪冰</a>
+            <a href="#">＃Taiwan</a>
+            <a href="#">#Snowice</a>
+        
+        </div>
+        
+        <div class="note">
+            <img src="./images_3/Jeff.jpg" alt="" width="25px" height="25px" style="border-radius: 50%">
+            <a href="#">Jeff</a>
+            <img src="./images_3/eye.png" alt="" width="20px" height="20px">
+            <p>300</p>
+            <img src="./images_3/blogging.png" alt="" width="20px" height="20px">
+            <p>300</p>
+        
+        </div>
+    </div>
+    <div class="flex_column_item4 wow fadeInUp">
+
+        <a href="./imges/blogimg1.jpg" class="strip" data-strip-group="mygroup7" data-strip-options="side: 'left'"></a>
+        <a href="./imges/blog_g1.jpg" class="strip" data-strip-group="mygroup7" data-strip-options="side: 'left'"></a>
+
+        <div class="blog_pic">
+            <a href="./imges/blogimg10.jpg" class="strip" data-strip-group="mygroup7" data-strip-options="side: 'left'"><img src="./imges/blogimg10.jpg" width="100%"></a>
+        </div>
+        
+        <div class="blog_txt">
+            <h3>藍莓起司雪冰太棒了！</h3>
+            <p>看起來有點像是珍珠奶茶口味的這款韓國雪冰，其實也是人氣很高的藍莓起司口味。藍莓鋪滿了整碗冰，上頭點綴了許多香濃的起司塊，不管是冰品配著藍莓吃，或是連同起司一起感受這濃郁的香氣，都很適合。這款算是小編的私心熱愛，尤其是看了這藍莓舖滿了一個碗公，就感覺十分滿足。</p>
+        </div>
+        
+        <div class="tag">
+            <a href="#">#雪冰</a>
+            <a href="#">＃Taiwan</a>
+            <a href="#">#Snowice</a>
+        
+        </div>
+        
+        <div class="note">
+            <img src="./images_3/Jeff.jpg" alt="" width="25px" height="25px" style="border-radius: 50%">
+            <a href="#">Jeff</a>
+            <img src="./images_3/eye.png" alt="" width="20px" height="20px">
+            <p>300</p>
+            <img src="./images_3/blogging.png" alt="" width="20px" height="20px">
+            <p>300</p>
+        
+        </div>
+    
+            <a href="./imges/blog_h1.jpg" class="strip" data-strip-group="mygroup8" data-strip-options="side: 'left'"></a>
+            <a href="./imges/blog_h2.jpg" class="strip" data-strip-group="mygroup8" data-strip-options="side: 'left'"></a>
+        <div class="blog_pic">
+            <a href="./imges_2/blogimg_a.jpg" class="strip" data-strip-group="mygroup8" data-strip-options="side: 'left'"><img src="./imges_2/blogimg_a.jpg" width="100%"></a>
+        </div>
+    
+        <div class="blog_txt">
+            <h3>藍莓起司雪冰太棒了！</h3>
+            <p>看起來有點像是珍珠奶茶口味的這款韓國雪冰，其實也是人氣很高的藍莓起司口味。藍莓鋪滿了整碗冰，上頭點綴了許多香濃的起司塊，不管是冰品配著藍莓吃，或是連同起司一起感受這濃郁的香氣，都很適合。這款算是小編的私心熱愛，尤其是看了這藍莓舖滿了一個碗公，就感覺十分滿足。</p>
+        </div>
+
+        <div class="tag">
+            <a href="#">#雪冰</a>
+            <a href="#">＃Taiwan</a>
+            <a href="#">#Snowice</a>
+            
+        </div>
+        
+        <div class="note">
+            <img src="./images_3/Jeff.jpg" alt="" width="25px" height="25px" style="border-radius: 50%">
+            <a href="#">Jeff</a>
+            <img src="./images_3/eye.png" alt="" width="20px" height="20px">
+            <p>300</p>
+            <img src="./images_3/blogging.png" alt="" width="20px" height="20px">
+            <p>300</p>
+        
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="bottom">
+    <a class="more_btn" href="#">更多日記</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+ <footer>
+
+    <ul class="footerNav wow fadeInUp slower">
+        <li><a href="#" target="_blank"><img src="./images_3/ig_32.png" alt=""></a></li>
+        <li><a href="#" target="_blank"><img src="./images_3/fb_32.png" alt=""></a></li>
+    </ul>
+
+    <img src="./imges/logo3.png" alt="" class="footerLogo wow fadeInUp slower ">
+
+    <strong class="copyright wow fadeInUp slower">&copy;Snow Ice</srong>
+
+ </footer>
+
+<!-- back TOP  -->
+<button type="button" id="BackTop" class="toTop-arrow">Top</button>
+  
+</div>
+ <script src="./js/jquery-3.3.1.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+ <script src="./js/TweenMax.js"></script>
+ <script src="./js/index.js"></script>
+ <script src="./js/backTop.js"></script>
+ <script src="./vendors/wow.min.js"></script>
+ <script>
+    new WOW().init();
+</script>
+<script src="http://www.lmlblog.com/winter/templets/xq/js/snowy.js"></script>
+<script src="./vendors/strip.pkgd.min.js"></script>
+<script src="./js/str.js"></script>
+</body>
+</html>

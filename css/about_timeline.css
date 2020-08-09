@@ -1,0 +1,495 @@
+
+*{
+    box-sizing:border-box;
+}
+
+
+body{
+    font-family: Arial,'Microsoft JhengHei';
+    background-color:#edece1;
+    overflow-x: hidden
+}
+.wrap{
+     width: 100%;
+     margin:0 auto;
+ }
+ .background{
+    filter:blur(5px);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  
+
+
+ header .container{
+     width:100%;
+     display:flex;
+     justify-content: space-between;
+     position:fixed;
+     z-index:9;
+     background-color:rgba(0,0,0,.5);
+    height:65px;
+    backdrop-filter: blur(5px);
+     transform: translateY(0%);
+    transition: transform 2s;   
+ 
+     /* border:1px solid red; */
+ }
+ header .container.-on{
+	/*第二步：出現*/
+	transform: translateY(-200%);
+	
+  }
+ header .container .logo a{
+     display:inline-block;
+ }
+ header .container .logo a img{
+     width: 200px;
+ }
+ 
+ .navList{
+   /* background-color: #000; */
+ /* background:linear-gradient(to right,transparent 30%,rgba(0,0,0,.3));   */
+ height: 65px;
+ font-size: 0;
+ z-index:50;
+ 
+ }
+ 
+ .navList .navItem{
+     display:inline-block;
+     text-decoration:none;
+     box-sizing: border-box;
+     padding:20px;   
+     color:#ffdfd7;
+     font-size:1.2rem;
+     transition: transform .2s .1s, color .2s .1s;
+     opacity: 0;
+ }
+ 
+  .navItem:after{
+     content:'';
+     width: 0;
+     height: 0;
+     position: absolute;
+     border-bottom: 3px solid #fff;
+     top: 75%;
+     left: 20px;
+     transition: width .3s;
+     } 
+     
+     .navItem:hover:after{
+     width: 60px;
+     transition: width .3s .1s;
+   }
+   .navItem:hover{
+     transform: translateY(-2px) scale(1.05);
+     color: #fff;
+     transition:transform .2s;
+   }
+   
+   .navList .focus{	
+     color:#fff;
+   }
+ 
+ 
+ /* .parallax{
+     background-attachment: fixed;
+     background-image:url(../images_3/tree-in-snow-in-winter.jpg) ;
+     height: 550px;
+     background-size: cover;
+     position: relative;
+     
+ }  */
+ 
+ 
+ .parallax .parallax_inner{
+     width:60vw;
+     height:25vh;
+     background-color: #fff;
+     opacity:.5;
+     position: absolute;
+     top:0;
+     left:0;
+     right:0;
+     bottom:0;
+     border-radius:20px;
+     margin:auto;
+     display:flex;
+     align-items: center;
+     justify-content: center;
+ 
+ } 
+ .parallax .parallax_inner h1{
+     text-align:center;
+     font-size:3rem;
+     letter-spacing:1rem;
+ }
+
+
+.timeline{
+    width: 80%;
+    margin:120px auto 0;
+    position: relative;
+    padding-bottom: 50px;
+    
+   
+
+    }
+    .timeline li{
+        display:flex;
+        margin-bottom: 30px;
+        justify-content:space-between;
+        position: relative;
+       
+
+    } 
+.timeline li .pic{
+        width:46%;
+        position: relative;
+        
+
+}
+    /* 圖片邊緣模糊效果 */
+ .pic:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    
+    box-shadow:0px 0px 20px 20px #edece1 inset;
+} 
+    .timeline li .pic img{
+        width: 100%;
+        vertical-align:middle;
+        /* margin-bottom: 100px; */
+        border-radius:20px;
+        /* box-shadow:2px 3px 5px #aaa; */
+       
+    }
+    .timeline li .txt{
+        width: 46%;
+        /* background-color: #aaa; */
+        box-sizing: border-box;
+        padding:20px;
+        /* margin-top: 100px; */
+        /* border-radius:20px; */
+        /* box-shadow:2px 3px 5px #aaa; */
+        
+
+    }   
+    
+    
+    /* .timeline li::before{
+        content:'';
+        position:absolute;
+        width: 8%;
+        height:2px;
+        background-color: #ccc;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        margin:auto;
+    } */
+
+
+    .timeline li::after{
+        content:'';
+        height: 120%;
+        width: 2px;
+        background-color: #ccc;
+        position: absolute;
+        left:0;
+        right:0;
+        margin:auto;
+    }
+    /* .timeline li:last-child::after{
+        /* bottom:50%; */
+
+    /* } */
+
+    .timeline::after{
+        content:'';
+        width:20px;
+        height: 20px;
+        border-radius:50%;
+        background-color: #aaa;
+        position:absolute;
+        bottom:0;
+        left:0;
+        right:0;
+        margin:auto;
+        z-index: 2;
+        
+    }
+    .timeline li .snowice{
+        width:100px;
+        height: 100px;
+        z-index:2;
+        margin-top:-50px;
+        margin:-25px 20px 0px 20px;
+        
+        
+    }
+
+    .timeline li .snowice2{
+        width:100px;
+        height: 100px;
+        z-index:2;
+        margin-top:20px;
+        margin:0 50px;
+        
+        
+    }
+    p{
+    text-align: justify;
+    line-height: 2;
+    font-size: 16px;
+    letter-spacing: 3px;
+    }
+
+    h3{
+    display:block;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    line-height: 3;
+    color: #333;
+    }
+
+
+.fadeInLeft{
+    animation:  1s linear  1 ;
+    visibility: visible;
+}
+
+
+.fadeInRight{
+    animation:  1s linear  1 ;
+    visibility: visible;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-20%, 0, 0);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+    }
+    .fadeInLeft {
+    animation-name: fadeInLeft;
+    }
+    
+    
+    
+    @keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(20%, 0, 0);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+    }
+    .fadeInRight {
+    animation-name: fadeInRight;
+    }
+
+ /* backTop */
+button.toTop-arrow{
+	outline: none;
+	width:5rem;
+	height:5rem;
+	padding:0;
+	margin: 0;
+	border:0;
+	border-radius:50%;
+	opacity:1;
+	 /* background: url(../images_3/arrow.svg);  */
+	/* background-size:cover;  */
+	 background-color:rgba(255, 255, 255, 0.1);
+	color:#aaa; 
+	cursor:pointer;
+	position:fixed;
+	right: 1rem;
+	bottom:1rem;
+	display:none;
+	z-index: 1;
+	transition:all .5s;
+	 border:1px solid #aaa;
+	 font-size:1.2rem; 
+	 letter-spacing:.1rem;
+	  -webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px); 
+	
+	
+
+}
+
+button.toTop-arrow:hover{
+	 background-color:#aaa;
+	 color: #fff; 
+	 transform: scale(1.2);
+	 
+
+}   
+
+
+/*RWD*/
+@media screen and (max-width:767px){
+    .timeline li::after{
+        display:none;
+    }
+    .timeline::after{
+        display:none;
+    }
+
+    .timeline li{
+            display:flex;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            justify-content:space-between;
+            flex-direction: column;
+            position: relative;
+            margin-top:100px;
+         
+        } 
+    .timeline li .pic{
+        width:80%;
+        margin:0 auto;
+        position: relative;
+        order:3;
+    
+    }
+    .timeline li .pic img{
+        width:100%;
+       
+    }
+    .timeline li .txt{
+        width:80%;
+        margin:0 auto;
+        order:2;
+       
+    }
+
+    .timeline li .snowice,
+    .timeline li .snowice2{
+        margin:0 auto;
+        order:1;
+        
+        
+    }
+    .parallax .parallax_inner {
+        height: 150px;
+    }
+    .parallax .parallax_inner h1 {
+        font-size: 2rem;
+    }
+    .parallax {
+        height: 380px;
+        background-position: 0 -230px;
+    }
+
+
+}
+
+
+/*漢堡選單*/
+@media screen and (max-width:767px){
+   .hamburger{
+      outline:none;
+      transition:all 1s;
+    }
+   .hamburger:hover{
+      opacity:.5;
+    }
+     header .container{
+       
+       height:auto;
+       
+    }   
+    header .container .logo a img{
+    width:100px;
+     }
+    .navList{
+     display:none;
+     width:100%;
+     height:100%;
+     margin-top:65px;
+     padding: 2%;
+   
+     }
+    .navList .navItem{
+     display:block;
+     /* background-color: rgba(0,0,0,.5); */
+     width:100%;
+     height:100%;
+     text-align:center;
+     margin: 2%;
+     opacity:0;
+    
+     
+    }
+    .navList .navItem:last-child{
+        border-radius:0 0 20px 20px;
+    }
+    
+    .navItem:after{
+        display:none;
+    }
+
+
+}
+ 
+@media screen and (min-width:768px){
+    
+    .ham{
+        display:none;
+    }
+    
+    .navList{  
+        display:block !important;
+    }
+    
+   
+
+}
+
+/* attachment手機版顯示處理 */
+.parallax{
+    width:100%;
+    /* background-attachment: fixed; */
+    background-image: url(../images_3/tree-in-snow-in-winter.jpg) ;
+    background-size: cover;
+    position: relative;
+    box-sizing:border-box;
+    background-repeat: no-repeat;
+    height: 550px;
+    margin-bottom:25px;
+    
+}
+@media screen and (max-width: 767px){
+    .parallax{
+        background-position:50% 50%;
+        
+    }
+
+}
+@media screen and (min-width: 768px){
+  .parallax{
+    background-attachment: fixed;
+    
+  }
+}

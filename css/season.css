@@ -1,0 +1,797 @@
+body {
+  font-family: Arial, 'Microsoft JhengHei';
+  background: linear-gradient(-45deg, #fffaf0, #f8c3c1);
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* .background{
+  filter:blur(5px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}  */
+
+
+
+
+header .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, .5);
+  height: 65px;
+  backdrop-filter: blur(5px);
+  transform: translateY(0%);
+  transition: transform 2s;
+
+  /* border:1px solid red; */
+}
+
+header .container.-on {
+  /*第二步：出現*/
+  transform: translateY(-200%);
+
+}
+
+header .container .logo a {
+  display: inline-block;
+}
+
+header .container .logo a img {
+  width: 200px;
+}
+
+.navList {
+  /* background-color: #000; */
+  /* background:linear-gradient(to right,transparent 30%,rgba(0,0,0,.3));   */
+  height: 65px;
+  font-size: 0;
+  z-index: 50;
+
+}
+
+.navList .navItem {
+  display: inline-block;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 20px;
+  color: #ffdfd7;
+  font-size: 1.2rem;
+  transition: transform .2s .1s, color .2s .1s;
+  opacity: 0;
+}
+
+.navItem:after {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-bottom: 3px solid #fff;
+  top: 75%;
+  left: 20px;
+  transition: width .3s;
+}
+
+.navItem:hover:after {
+  width: 60px;
+  transition: width .3s .1s;
+}
+
+.navItem:hover {
+  transform: translateY(-2px) scale(1.05);
+  color: #fff;
+  transition: transform .2s;
+}
+
+.navList .focus {
+  color: #fff;
+}
+
+
+.parallax {
+  /* background-attachment: fixed; */
+  background-image: url(../imges_2/season/fruit/banner_peach2.jpg);
+  height: 550px;
+  background-size: cover;
+  position: relative;
+
+}
+
+
+
+
+.parallax .parallax_inner {
+  width: 60vw;
+  height: 25vh;
+  background-color: #fff;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.parallax .parallax_inner h1 {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 1rem;
+}
+
+.content_season {
+  /* border:1px solid blue; */
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  background: url(../imges_2/season/fruit/banner_peach.jpg) no-repeat;
+  background-size: cover;
+  height: 550px;
+
+
+}
+
+.over {
+  /* border: 1px solid red; */
+  width: 600px;
+  height: 350px;
+  margin: 5rem;
+  box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: 2px 3px 10px #f7b6a7;
+  transition: all .5s;
+  overflow: hidden;
+  transition: all .5s;
+
+
+}
+
+/* @media screen and (max-width:414px) {
+  .content_season .item1 .over img{
+    height:100%;
+
+  }
+} */
+
+/* .content_season .item1 a {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+} */
+
+.content_season .item1 img {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  transition: all .5s;
+
+
+}
+
+.content_season .item1:hover img {
+  transform: scale(1.2);
+  filter: brightness(.5);
+}
+
+.content_season .item2 {
+  width: 600px;
+
+  margin: 5rem;
+  box-sizing: border-box;
+  box-shadow: 2px 3px 10px #f9cec2;
+  border-radius: 20px;
+  background-color: #fff;
+  text-align: center;
+  height: 210px;
+  border: 5px solid #f9cec2;
+
+}
+
+.content_season .item2:hover .img1 {
+  animation: ss .2s linear infinite alternate;
+
+}
+
+.item2 .img1 {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(-45deg, #fffaf0, #f8c3c1);
+  margin: -75px auto 0;
+  border-radius: 50%;
+}
+
+
+.parallax_2 {
+  /* border:1px solid red; */
+  display: flex;
+  justify-content: center;
+  /* background:url(../imges_2/season/fruit/merry_banner.jpg) no-repeat;
+  background-size:cover;
+  background-attachment: fixed; */
+
+}
+
+.parallax_2 .item3 {
+  width: 600px;
+  margin: 5rem;
+  box-sizing: border-box;
+  align-self: center;
+  text-align: center;
+  box-shadow: 2px 3px 10px #f7b6a7;
+  border-radius: 20px;
+  background-color: #fff;
+  border: 5px solid #f9cec2;
+
+}
+
+
+.item3 .img1 {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(-45deg, #fffaf0, #f8c3c1);
+  margin: -75px auto 0;
+  border-radius: 50%;
+}
+
+.parallax_2 .item3:hover .img1 {
+  animation: ss .2s linear infinite alternate;
+
+}
+
+
+
+.parallax_2 .item4 {
+  width: 500px;
+  margin: 5rem;
+  box-sizing: border-box;
+  /* border:1px solid #aaa; */
+  /* box-shadow:2px 3px 5px #aaa; */
+  border-radius: 20px;
+
+
+}
+
+
+
+.swiper-container {
+  border-radius: 20px;
+  height: auto;
+}
+
+
+.banner {
+  width: 100%;
+  /* width: 300px; */
+  height: 550px;
+  /* border:1px solid red; */
+  background: url(../imges_2/season/fruit/merry_banner.jpg) no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed;  */
+  background-position: -150px;
+
+}
+
+
+
+.season_content_2 {
+  display: flex;
+
+  /* border:1px solid orange; */
+  justify-content: space-around;
+  /* background: url(../imges/menu_banner6.jpg) no-repeat ; */
+  background-size: cover;
+  background-attachment: fixed;
+  /* position: relative; */
+  margin-bottom: 150px;
+
+
+
+}
+
+.season_content_2 .item5 {
+  width: 50%;
+  margin: 1rem;
+  text-align: center;
+  background-color: #fff;
+  border: 5px solid #f9cec2;
+  border-radius: 20px;
+  box-shadow: 2px 3px 10px #f7b6a7;
+  align-self: flex-end;
+  /* position: relative; */
+  z-index: 1;
+  transition: all .5s;
+  opacity: .7;
+
+}
+
+.season_content_2 .item5_2 {
+  width: 50%;
+  margin: 1rem;
+  text-align: center;
+  background-color: #fff;
+  border: 5px solid #f9cec2;
+  border-radius: 20px;
+  box-shadow: 2px 3px 10px #f7b6a7;
+  align-self: flex-start;
+  position: absolute;
+  top: 30%;
+  z-index: 1;
+
+}
+
+.season_content_2 .item6 {
+  width: 50%;
+  margin: 1rem;
+  text-align: center;
+  background-color: #fff;
+  border: 5px solid #f9cec2;
+  border-radius: 20px;
+  box-shadow: 2px 3px 10px #f7b6a7;
+  align-self: flex-end;
+  z-index: 1;
+  transition: all .5s;
+  opacity: .7;
+
+
+}
+
+.season_content_2 .item7 {
+  width: 50%;
+  margin: 1rem;
+  text-align: center;
+  background-color: #fff;
+  border: 5px solid #f9cec2;
+  border-radius: 20px;
+  box-shadow: 2px 3px 10px #f7b6a7;
+  align-self: flex-start;
+  position: absolute;
+  top: 40%;
+  z-index: 2;
+
+
+
+}
+
+.item_flex_column_1 {
+  display: flex;
+  flex-direction: column;
+  /* border:1px solid red; */
+  position: relative;
+  margin-top: -100px;
+
+}
+
+.item_flex_column_2 {
+  display: flex;
+  flex-direction: column;
+  /* border:1px solid blue; */
+  position: relative;
+  margin-top: -50px;
+  right: 70px;
+
+}
+
+.item5 .img1 {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(-45deg, #fffaf0, #f8c3c1);
+  margin: -75px auto 0;
+  border-radius: 50%;
+}
+
+.item5,
+.item6 {
+
+  filter: brightness(.9) blur(1px);
+  transition: all .5s;
+}
+
+.item5 .img2 {
+  width: 100%;
+  /* height: 200px; */
+}
+
+.item5_2 .img1 {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(-45deg, #fffaf0, #f8c3c1);
+  margin: -75px auto 0;
+  border-radius: 50%;
+
+}
+
+.item5_2 .img2 {
+  width: 100%;
+  /* height: 200px; */
+}
+
+.item6 .img1 {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(-45deg, #fffaf0, #f8c3c1);
+  margin: -75px auto 0;
+  border-radius: 50%;
+}
+
+.item6 .img2 {
+  width: 100%;
+  /* height:250px; */
+
+
+}
+
+.item7 .img1 {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(-45deg, #fffaf0, #f8c3c1);
+  margin: -75px auto 0;
+  border-radius: 50%;
+}
+
+.item7 .img2 {
+  width: 100%;
+  /* height:250px; */
+
+
+}
+
+h3 {
+  color: #f5afac;
+  font-size: 2rem;
+  letter-spacing: .2rem;
+}
+
+p {
+  font-size: 1rem;
+  letter-spacing: .2rem;
+  line-height: 2;
+  padding: 1rem;
+  text-align: left;
+
+
+}
+
+.item5:hover {
+  opacity: 1;
+  z-index: 5;
+  transform: scale(1.1);
+  filter: blur(0px);
+}
+
+.item5:hover .img1 {
+  animation: ss .2s linear infinite alternate;
+
+}
+
+.item5_2:hover .img1 {
+  animation: ss .2s linear infinite alternate;
+}
+
+.item5_2:hover {
+  z-index: 3;
+
+
+
+}
+
+.item6:hover {
+  z-index: 5;
+  opacity: 1;
+  transform: scale(1.1);
+  filter: blur(0px);
+
+}
+
+.item6:hover .img1 {
+  animation: ss .2s linear infinite alternate;
+
+}
+
+.item7:hover .img1 {
+  animation: ss .2s linear infinite alternate;
+
+}
+
+@keyframes ss {
+  0% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+
+
+.item .txt {
+  padding: 20px 20px 2em;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+
+  }
+
+  to {
+    opacity: 1;
+
+  }
+}
+
+
+
+/* backTop */
+button.toTop-arrow {
+  outline: none;
+  width: 5rem;
+  height: 5rem;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 50%;
+  opacity: 1;
+  /* background: url(../images_3/arrow.svg);  */
+  /* background-size:cover;  */
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #aaa;
+  cursor: pointer;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+  z-index: 1;
+  transition: all .5s;
+  border: 1px solid #aaa;
+  font-size: 1.2rem;
+  letter-spacing: .1rem;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+
+
+
+}
+
+button.toTop-arrow:hover {
+  background-color: #aaa;
+  color: #fff;
+  transform: scale(1.2);
+
+
+}
+
+
+
+
+
+
+/*RWD*/
+@media screen and (max-width:996px) {}
+
+@media screen and (max-width:767px) {
+  .parallax .parallax_inner {
+    height: 150px;
+  }
+
+  .parallax .parallax_inner h1 {
+    font-size: 2rem;
+  }
+
+  .parallax {
+    height: 380px;
+    background-position: center center;
+  }
+
+
+  .content_season {
+    flex-direction: column;
+
+    height: auto;
+
+  }
+
+  .content_season .item1 .over {
+    width: 100%;
+    margin: 50px auto;
+    height: 300px;
+
+
+
+  }
+
+  .content_season .item2 {
+    width: 90%;
+    margin: 50px auto;
+    height: auto;
+
+
+  }
+
+  .parallax_2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+
+  }
+
+  .parallax_2 .item3 {
+    width: 90%;
+    margin: 10px auto 20px;
+    order: 2;
+    height: auto;
+
+  }
+
+  .parallax_2 .item4 {
+    width: 100%;
+    margin: 80px auto;
+    order: 1;
+
+  }
+
+  .banner {
+    height: 300px;
+  }
+
+  .season_content_2 {
+    display: flex;
+    flex-direction: column;
+    /* border:1px solid orange; */
+    justify-content: space-between;
+    margin-bottom: 150px;
+
+
+
+  }
+
+  .item_flex_column_1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* border:1px solid red; */
+    position: relative;
+    margin-top: -100px;
+
+  }
+
+
+  .item_flex_column_2 {
+    margin-top: 100px;
+    left: 10px;
+
+
+
+  }
+
+  .season_content_2 .item5 {
+    width: 75%;
+
+
+  }
+
+  .season_content_2 .item5_2 {
+    width: 75%;
+
+
+  }
+
+  .season_content_2 .item6 {
+    width: 75%;
+
+
+
+  }
+
+  .season_content_2 .item7 {
+    width: 75%;
+
+
+
+
+  }
+
+
+
+
+
+}
+
+/*漢堡選單*/
+@media screen and (max-width:767px) {
+  .hamburger {
+    outline: none;
+    transition: all 1s;
+  }
+
+  .hamburger:hover {
+    opacity: .5;
+  }
+
+  header .container {
+
+    height: auto;
+
+  }
+
+  header .container .logo a img {
+    width: 100px;
+  }
+
+  .navList {
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin-top: 65px;
+    padding: 2%;
+
+  }
+
+  .navList .navItem {
+    display: block;
+    /* background-color: rgba(0,0,0,.5); */
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 2%;
+    opacity: 0;
+
+
+  }
+
+  .navList .navItem:last-child {
+    border-radius: 0 0 20px 20px;
+  }
+
+  .navItem:after {
+    display: none;
+  }
+
+
+}
+
+@media screen and (min-width:768px) {
+
+  .ham {
+    display: none;
+  }
+
+  .navList {
+    display: block !important;
+  }
+
+
+
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+  .parallax {
+    background-attachment: fixed;
+
+  }
+
+  .banner {
+    background-attachment: fixed;
+
+  }
+}

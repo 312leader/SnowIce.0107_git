@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>雪の滋味</title>
+    <link rel="shortcut icon" href="./images_3/seal.jpg">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/menu_2.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./vendors/owl.carousel.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+    <link rel="stylesheet" href="./vendors/hamburgers.css">
+    <link rel="stylesheet" href="./vendors/animate.min.css">
+    <style>
+         
+*{
+    box-sizing: border-box;
+}
+.time{
+    text-align: center;
+}
+
+.countdown-title {
+  color:#222;
+  /* font-weight: 100; */
+  font-size:40px;
+  margin: 40px 0px 20px;
+  letter-spacing: 1rem;
+}
+
+.countdown {
+  /* font-family: sans-serif; */
+  color: #7CD1F9;
+  /* color:pink; */
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size:40px;
+ 
+  
+}
+
+.countdown-number {
+  width:150px;
+  padding: 10px;
+  border-radius:20px;
+  background: #fff;
+  display: inline-block;
+  margin:20px;
+  border:5px solid #7CD1F9;
+   /* border:5px solid pink; */
+  box-shadow: 2px 3px 10px #ccc;
+}
+
+.countdown-time {
+  padding: 15px;
+  border-radius:15px;
+  background:#fff;
+  display: inline-block;
+  
+  
+}
+
+.countdown-text {
+  display: block;
+  padding-top: 5px;
+  font-size: 30px;
+  font-weight: 100;
+}
+    
+    
+    
+    
+    </style>
+    
+</head>
+<body>
+<div class="wrap">
+
+        <header>
+                <div class="container">
+                    <!-- <div class="background"></div> -->
+                       <span class="logo">
+                           <a href="index.html"><img src="./imges/logo3.png"></a>
+                       </span> 
+
+                    <div class="navList">
+                        <a class="navItem" href="./about_timeline.html">雪の故事</a>
+                        <a class="navItem" href="./season.html">雪の季節</a>
+                        <a class="navItem focus" href="./menu.html">雪の滋味</a>
+                        <a class="navItem" href="./blog.html">雪の日記</a>
+                        <a class="navItem" href="./contact_ipad.html">雪の訊息</a>
+                    </div>
+
+                    <div class="ham">
+                        <button onclick="animat()" class="hamburger hamburger--elastic" type="button">
+                            <span class="hamburger-box ">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+
+                </div>
+            
+         </header>
+         
+    
+         <div class="parallax ">
+            <div class="parallax_inner wow rubberBand"><h1>雪の滋味</h1></div>
+         </div>
+
+         <div class="time">
+             
+
+
+        <div class="countdown-title wow fadeInDown">優惠倒數</div>
+        <div id="countdown" class="countdown">
+            <div class="countdown-number wow fadeInDown delay-1s">
+                <span class="days countdown-time"></span>
+                <span class="countdown-text">Days</span>
+            </div>
+            <div class="countdown-number wow fadeInDown delay-2s">
+                <span class="hours countdown-time"></span>
+                <span class="countdown-text">Hours</span>
+            </div>
+            <div class="countdown-number wow fadeInDown delay-3s">
+                <span class="minutes countdown-time"></span>
+                <span class="countdown-text">Minutes</span>
+            </div>
+            <div class="countdown-number wow fadeInDown delay-4s">
+                <span class="seconds countdown-time"></span>
+                <span class="countdown-text">Seconds</span>
+            </div>
+        </div>
+        <!-- 
+        https://denis-creative.com/jstimer/
+        https://www.sitepoint.com/build-javascript-countdown-timer-no-dependencies/
+        -->
+
+
+
+
+
+
+
+
+
+
+
+
+         </div>
+
+
+
+
+         <div class="menu2_content">
+
+            <div class="menu2_item">
+                <img class="wow zoomIn slower" id="example" src="./imges_2/13.png" alt="" width="100%">
+
+            </div>
+
+            <div class="menu2_item wow zoomIn slower delay-1s">
+                <h2>草莓馬卡龍</h2>
+                <p>馬卡龍杏仁餅乾!甜草莓醬和香草冰淇淋幻想組合!</p>
+                <button id="btn">購買優惠券</button>
+
+                <h3>營養訊息<h3>
+                    <div class="table1">
+                        <div class="table_container">
+                            <div class="table_item">卡路里(千卡)</div>
+                            <div class="table_item">糖(克)</div>
+                            <div class="table_item">蛋白質(克)</div>
+                            <div class="table_item">飽和(脂肪)</div>
+                            <div class="table_item">鈉(毫克)</div>
+                            
+                            
+                        </div>
+                        <div class="table_container">
+                            <div class="table_item">1040</div>
+                            <div class="table_item">144</div>
+                            <div class="table_item">17</div>
+                            <div class="table_item">20</div>
+                            <div class="table_item">470</div>
+                            
+                        </div>
+                    </div>
+                  <!-- <table class ="table1">
+                   
+                        
+                      <tr>
+                          <th>卡路里(千卡)</th>
+                          <th>糖(克)</th>
+                          <th>蛋白質(克)</th>
+                          <th>飽和(脂肪) </th>
+                          <th>鈉(毫克)</th>
+                      </tr>
+                     
+                      
+                      <tr>
+                          <td>1040</td>
+                          <td>144</td>
+                          <td>17</td>
+                          <td>20</td>
+                          <td>470</td>
+                      </tr>
+                    
+                  </table> -->
+                  
+                 
+                <h3>過敏訊息</h3>
+                <div class="table3">
+                <div class="table_container2">
+                    <div class="table_item2">牛奶、</div>
+                    <div class="table_item2">大豆、</div>
+                    <div class="table_item2">雞蛋、</div>
+                    <div class="table_item2">小麥</div>
+                    
+                
+                </div>
+                   
+                
+                    
+
+            </div>
+
+         </div>
+
+         <!-- <div class="menu2_moreList">
+           
+             <h2>更多雪冰</h2>
+             <ul>
+                <li>
+                <img src="./imges_2/01.png" alt="" >
+                <h4>黃豆粉雪冰</h4>
+                <p>售價:250元</p>
+                </li>
+                <li>
+                <img src="./imges_2/02.png" alt="">
+                <h4>奶酪蛋糕</h4>
+                <p>售價:250元</p>
+                </li>
+                <li>
+                <img src="./imges_2/03.png" alt="">
+                <h4>紅豆年糕</h4>
+                <p>售價:250元</p>
+                </li>
+                <li>
+                <img src="./imges_2/04.png" alt="">
+                <h4>巧克力布朗尼</h4>
+                <p>售價:250元</p>
+                </li>
+
+            </ul> -->
+
+
+
+            </div>
+            <div class="menu2_moreList">
+           
+                    <h2>更多雪冰</h2>
+                 <div class="owl-carousel">
+                         
+                    <div>
+                        <img src="./imges_2/01.png" alt="" >
+                        <h4>黃豆粉雪冰</h4>
+                        <p>售價:250元</p>
+                    </div>
+                    <div>
+                        <img src="./imges_2/02.png" alt="">
+                        <h4>奶酪蛋糕</h4>
+                        <p>售價:250元</p>
+                    </div>
+                    <div>
+                        <img src="./imges_2/03.png" alt="">
+                        <h4>紅豆年糕</h4>
+                        <p>售價:250元</p>
+                    </div>
+                    <div>
+                        <img src="./imges_2/04.png" alt="">
+                        <h4>巧克力布朗尼</h4>
+                        <p>售價:250元</p>
+                    </div>
+                    <div>
+                        <img src="./imges_2/05.png" alt="">
+                        <h4>藍莓起司</h4>
+                        <p>售價:250元</p>
+                    </div>
+                    <div>
+                        <img src="./imges_2/06.png" alt="">
+                        <h4>紅豆麻吉抹茶</h4>
+                        <p>售價:250元</p>
+                    </div>
+                  </div>
+                </div> 
+
+
+
+
+                
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         <footer>
+    
+                <ul class="footerNav wow fadeInUp slower ">
+                    <li><a href="#" target="_blank"><img src="./images_3/ig_32.png" alt=""></a></li>
+                    <li><a href="#" target="_blank"><img src="./images_3/fb_32.png" alt=""></a></li>
+                </ul>
+            
+                <img src="./imges/logo3.png" alt="" class="footerLogo wow fadeInUp slower ">
+            
+                <strong class="copyright wow fadeInUp slower ">&copy;Snow Ice</srong>
+            
+            </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- back TOP  -->
+<button type="button" id="BackTop" class="toTop-arrow">Top</button>
+
+
+</div>
+
+
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+<script src="./js/TweenMax.js"></script>
+<script src="./vendors/owl.carousel.min.js"></script>
+<script src="./js/owl.js"></script>
+<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
+<script src="./js/slick.js"></script> -->
+<!-- <script src="./js/okzoom.min.js"></script>
+<script src="./js/okzoomSpec.js"></script> -->
+<script src="./js/zoomin.js"></script>
+<script src="./js/okzoom.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/backTop.js"></script>
+<script src="./vendors/wow.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+
+
+<!-- 倒數計時 -->
+<script>
+    function getTimeRemaining(endtime) {
+            var t = Date.parse(endtime) - Date.parse(new Date());
+            var seconds = Math.floor((t / 1000) % 60);
+            var minutes = Math.floor((t / 1000 / 60) % 60);
+            var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+            var days = Math.floor(t / (1000 * 60 * 60 * 24));
+            return {
+                'total': t,
+                'days': days,
+                'hours': hours,
+                'minutes': minutes,
+                'seconds': seconds
+            };
+        }
+
+        function initializeClock(id, endtime) {
+            var clock = document.getElementById(id);
+            var daysSpan = clock.querySelector('.days');
+            var hoursSpan = clock.querySelector('.hours');
+            var minutesSpan = clock.querySelector('.minutes');
+            var secondsSpan = clock.querySelector('.seconds');
+
+            function updateClock() {
+                var t = getTimeRemaining(endtime);
+
+                daysSpan.innerHTML = t.days;
+                hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+                minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+                secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+                if (t.total <= 0) {
+                    clearInterval(timeinterval);
+                }
+            }
+
+            updateClock();
+            var timeinterval = setInterval(updateClock, 1000);
+        }
+
+        var deadline = "January 17 2020 00:00:00 GMT+0300"; //for Ukraine
+        //var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000); // for endless timer
+        initializeClock('countdown', deadline);
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,666 @@
+body {
+    font-family: Arial, 'Microsoft JhengHei';
+    /* height: 100%; */
+    background-color: #edece1;
+    overflow-x: hidden;
+    /* background: url(../images_3/contact_body.jpg); */
+    /* background-repeat: no-repeat; */
+    /* background-size:cover; */
+    /* animation: moveleft 20s; */
+}
+
+
+
+
+.wrap {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+header .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, .5);
+    height: 65px;
+    backdrop-filter: blur(5px);
+    transform: translateY(0%);
+    transition: transform 2s;
+
+    /* border:1px solid red; */
+}
+
+header .container.-on {
+    /*第二步：出現*/
+    transform: translateY(-200%);
+
+}
+
+header .container .logo a {
+    display: inline-block;
+}
+
+header .container .logo a img {
+    width: 200px;
+}
+
+.navList {
+    /* background:linear-gradient(to right,transparent 30%,rgba(0,0,0,.3));   */
+    height: 65px;
+    font-size: 0;
+    /* display:flex; */
+
+}
+
+.navList .navItem {
+    display: inline-block;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 20px;
+    color: #ffdfd7;
+    font-size: 1.2rem;
+    transition: transform .2s .1s, color .2s .1s;
+    opacity: 0;
+}
+
+.navItem:after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-bottom: 3px solid #fff;
+    top: 75%;
+    left: 20px;
+    transition: width .3s;
+}
+
+.navItem:hover:after {
+    width: 60px;
+    transition: width .3s .1s;
+}
+
+.navItem:hover {
+    transform: translateY(-2px) scale(1.05);
+    color: #fff;
+    transition: transform .2s;
+}
+
+.navList .focus {
+    color: #fff;
+}
+
+
+/* .parallax{
+    background-attachment: fixed;
+    background-image: url(../imges/contact_banner.jpg) ;
+    height:550px;
+    background-size:cover;
+    position: relative;
+    background-repeat:no-repeat;
+    
+    
+} */
+
+
+
+
+
+
+
+
+.parallax .parallax_inner {
+    width: 60vw;
+    height: 25vh;
+    background-color: #fff;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.parallax .parallax_inner h1 {
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 1rem;
+}
+
+/* .content_ipad_store{
+    display:flex;
+    justify-content:space-around;
+    margin-right:50px;
+    /* border:1px solid red; */
+/* }  */
+
+.content_ipad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.contact_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2.QA {
+
+    margin: 50px auto;
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: .5rem;
+
+}
+
+
+
+
+.dialogue {
+    /* overflow:hidden; */
+
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 10px #3e92cc;
+    background-color: #f4f5f7;
+    /* border-radius:80px; */
+    transition: all 2s;
+    cursor: grab;
+}
+
+.dialogue:hover {
+    transform: translateY(-40%);
+}
+
+.dialogue:active {
+    cursor: grabbing;
+}
+
+
+
+
+.user {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.user .avatar {
+    width: 60px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.user .pic {
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.user .pic img {
+    width: 100%;
+    vertical-align: middle;
+
+}
+
+.user .txt {
+    background-color: #aaa;
+    padding: 16px;
+    border-radius: 10px;
+    line-height: 1.5;
+    position: relative;
+}
+
+.remote .txt {
+    margin-left: 20px;
+    margin-right: 80px;
+    background-color: #fff;
+    color: #a1b4c5;
+
+}
+
+.local {
+    justify-content: flex-end;
+}
+
+.local .txt {
+    margin-right: 20px;
+    margin-left: 80px;
+    order: -1;
+    background-color: #3e92cc;
+    color: #fff;
+
+}
+
+
+.remote .txt::before,
+.local .txt::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+
+}
+
+.remote .txt::before {
+    border-right: 20px solid #fff;
+    left: -10px;
+
+}
+
+.local .txt::before {
+    border-left: 20px solid #3e92cc;
+    right: -10px;
+
+}
+
+.store {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.store_1,
+.store_2 {
+    border-radius: 20px;
+    box-shadow: 2px 3px 5px #aaa;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: 30px;
+    width: 40%;
+
+}
+
+
+.store_img img {
+    width: 100%;
+    height:100%;
+    /* border-radius:20px; */
+    /* box-shadow:2px 3px 5px #aaa; */
+    /* margin-top:1px;     */
+
+}
+
+.store_txt {
+    /* border:1px dotted #aaa; */
+    /* border-radius:20px; */
+    /* box-shadow:2px 3px 5px #aaa; */
+    /* margin-top:5px; */
+    padding: 20px 20px;
+    color: #666;
+    background-color: #fff;
+
+
+}
+
+
+
+
+.store_txt p {
+    letter-spacing: .2rem;
+    line-height: 1.5;
+}
+
+.store_txt a {
+    text-decoration: none;
+    transition: all .5s;
+    color: #000;
+
+}
+
+.store_txt a:hover {
+    color: #aaa;
+
+}
+
+
+.store_img {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    transition: all .5s;
+    /* border:1px solid red; */
+}
+
+.store_img img {
+
+    position: absolute;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    transition: all 3s;
+}
+
+
+
+
+
+.store_img img:nth-of-type(2):hover {
+    opacity: 0;
+    transform: scale(1.2);
+    z-index: 5;
+}
+
+.store_img img:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+
+    }
+
+    to {
+        opacity: 1;
+
+    }
+}
+
+/* backTop */
+button.toTop-arrow {
+    outline: none;
+    width: 5rem;
+    height: 5rem;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 50%;
+    opacity: 1;
+    /* background: url(../images_3/arrow.svg);  */
+    /* background-size:cover;  */
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #aaa;
+    cursor: pointer;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    display: none;
+    z-index: 1;
+    transition: all .5s;
+    border: 1px solid #aaa;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+
+
+
+}
+
+button.toTop-arrow:hover {
+    background-color: #aaa;
+    color: #fff;
+    transform: scale(1.2);
+
+
+}
+
+
+/*RWD*/
+
+
+
+@media screen and (max-width:996px) {
+
+    .store_1,
+    .store_2 {
+        width: 80%;
+        flex-wrap: wrap;
+
+    }
+
+    .store_img {
+        height: 260px;
+    }
+}
+
+
+@media screen and (max-width:767px) {
+    .parallax .parallax_inner {
+        height: 150px;
+    }
+
+    .parallax .parallax_inner h1 {
+        font-size: 2rem;
+    }
+
+    .parallax {
+        height: 380px;
+        background-position: 0 -230px;
+    }
+
+    .marvel-device.ipad.silver:before {
+        background: none;
+    }
+
+    .dialogue:hover {
+        transform: translateY(0%);
+    }
+
+    .marvel-device.ipad.silver {
+        background: none;
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .marvel-device.ipad .camera {
+        display: none;
+    }
+
+    .marvel-device .screen {
+        -webkit-box-shadow: 0 0 0 0px #111;
+        box-shadow: 0 0 0 0px #111;
+    }
+
+    .marvel-device.ipad.silver .home {
+        display: none;
+    }
+
+    .store {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 50px;
+
+
+    }
+
+    .store_1,
+    .store_2 {
+        /* border-radius:20px; 
+        box-shadow:2px 3px 5px #aaa;
+        box-sizing: border-box; 
+        overflow: hidden; 
+        margin-top:30px; */
+        width: 80%;
+        flex-wrap: wrap;
+
+
+    }
+
+    .store_img {
+        height: 260px;
+    }
+
+    /*漢堡選單*/
+    .hamburger {
+        outline: none;
+        transition: all 1s;
+    }
+
+    .hamburger:hover {
+        opacity: .5;
+    }
+
+    header .container {
+
+        height: auto;
+
+    }
+
+    header .container .logo a img {
+        width: 100px;
+    }
+
+    .navList {
+        display: none;
+        width: 100%;
+        height: 100%;
+        margin-top: 65px;
+        padding: 2%;
+
+    }
+
+    .navList .navItem {
+        display: block;
+        /* background-color: rgba(0,0,0,.5); */
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin: 2%;
+        opacity: 0;
+
+
+
+    }
+
+    .navList .navItem:last-child {
+        border-radius: 0 0 20px 20px;
+    }
+
+    .navItem:after {
+        display: none;
+    }
+
+
+}
+
+
+
+@media screen and (min-width:768px) {
+
+    .ham {
+        display: none;
+    }
+
+    .navList {
+        display: block !important;
+    }
+
+
+
+}
+
+
+
+
+
+
+/* attachment手機版顯示處理 */
+.parallax {
+    width: 100%;
+    /* background-attachment: fixed; */
+    background-image: url(../imges/contact_banner.jpg);
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    height: 550px;
+    margin-bottom: 25px;
+
+}
+
+@media screen and (max-width: 767px) {
+    .parallax {
+        background-position: 50% 50%;
+
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .parallax {
+        background-attachment: fixed;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* contact 商店處理 */
+@media screen and (max-width:1024px) {
+    .store_img {
+        height: 250px;
+    }
+
+    .store_txt {
+        height:100px;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .store_1,
+    .store_2 {
+        margin: 2%;
+    }
+
+    .store_img {
+        height: 230px;
+    }
+
+
+}
+
+@media screen and (max-width:414px) {
+
+
+
+    .store_img {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:375px) {
+
+
+
+    .store_img {
+        height: 160px;
+    }
+}
